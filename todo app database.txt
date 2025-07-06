@@ -1,0 +1,39 @@
+//database creation
+CREATE DATABASE todoAPP;
+USE DATABASE todoAPP;
+//TABLE CREATION
+CREATE TABLE USERS(
+id int,
+name varchar(100),
+email varchar(100),
+phoneNumber varchar(20),
+password varchar(100),
+);
+//DATA INSERT
+INSERT INTO USERS(id, name,email,phonenumber,password)values(1,'rahim',rahim@gmail.com','018376473637','rahim123');
+
+INSERT INTO USERS(id, name,email,phonenumber,password)values(2,'fahim',fahim@gmail.com','01837y8673637','fahim1234');
+
+INSERT INTO USERS(id, name,email,phonenumber,password)values(3,'tuhin',tuhin@gmail.com','01856764637','tuhin1237');
+
+INSERT INTO USERS(id, name,email,phonenumber,password)values(4,'ramim',ramim@gmail.com','0189843367','ramim123098');
+
+
+// FIND USER BY EMAIL AND PASSWORD
+
+SELLECT*FROM USERS
+WHERE email='useremail' and password='userpassword'
+
+//FIND ALL USER
+SELECT*FROM users;
+
+//UPDATE TABLE
+
+UPDATE USERS 
+SET name='Rahim mia'
+WHERE email='rahim@gmail.com'
+
+//user deletion
+
+DELETE USERS
+WHERE email='rahim@gmail.com'
